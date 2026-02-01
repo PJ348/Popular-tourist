@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    font-family: "Inter", "Open Sans", "Roboto";
+    background-color: #ffffff;
+    line-height: auto; 
+}
+
+ .header {
+    font-weight: bold;
+    padding: 1rem 4rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 0px 2px 10px #0000001a;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: black; 
+    text-decoration: none;
+}
+
+.navbar a{
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.material-symbols-outlined {
+    display: none;
+}
+
+/* ขนาดหน้าจอมือถือ */
+/* @media (max-width:848px){
+    .header {
+        padding: 1rem 4rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 2px 10px #0000001a;
+    }
+    .navbar {
+        display: none;
+    }
+
+   .logo {
+        font-size: 1rem;
+   }
+   
+   .navbar a {
+        font-size: 1rem;
+   }
+    
+} */
+
