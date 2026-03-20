@@ -1,32 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Inter", "Open Sans", "Roboto";
     background-color: #ffffff;
-    line-height: auto; 
+    line-height: auto;
 }
 
 .header {
     font-weight: 700;
     padding: 1.25rem 8rem;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0px 2px 10px #0000001a;
 }
 
 .logo {
     font-weight: bold;
     font-size: 1.5rem;
-    color: black; 
+    color: black;
     text-decoration: none;
 }
 
-.navbar a{
+.navbar a {
     font-weight: 500;
     font-size: 1.25rem;
     color: black;
@@ -49,7 +49,7 @@ body{
     display: flex;
     align-items: center;
 
-    overflow-x: auto;             
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 40px;
 }
@@ -60,7 +60,7 @@ body{
     object-fit: cover;
     scroll-snap-align: center;
     border-radius: 20px;
-    
+
 }
 
 .bannerImages::-webkit-scrollbar {
@@ -89,20 +89,23 @@ body{
     flex: 1;
 }
 
-.contentAllHeading h1 , h2 {
+.contentAllHeading h1,
+h2 {
     font-weight: 500;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.contentAllDetail , .contentAllPlace p {
+.contentAllDetail,
+.contentAllPlace p {
     font-size: 1rem;
     font-weight: 400;
 }
 
-.contentAllHeading , .contentAllDetail  {
+.contentAllHeading,
+.contentAllDetail {
     padding-bottom: 1rem;
 }
 
@@ -117,7 +120,7 @@ body{
     color: #73E993;
     margin-top: auto;
     padding: 0.75rem 1.5rem;
-    
+
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -132,7 +135,7 @@ body{
 
 .icon-green-arrow {
     color: #73E993;
-    font-size: 1rem; 
+    font-size: 1rem;
 }
 
 .northernButton:hover {
@@ -146,19 +149,35 @@ body{
     color: white;
 }
 
-.northernImg {
+.northernImg,
+.centralImg,
+.northeasternImg,
+.southernImg {
     display: flex;
     flex: 1;
     gap: 15px;
     width: 100%;
     margin-bottom: auto;
+    /* aspect-ratio: 408 / 480; */
+}
+
+.centralImg,
+.northeasternImg,
+.southernImg {
+    display: flex;
+    flex-direction: column;
+}
+
+.northernImg,
+.centralImg,
+.northeasternImg {
     aspect-ratio: 408 / 480;
 }
 
 .northernImgs1 {
     display: flex;
     flex: 243;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 15px;
 }
 
@@ -191,24 +210,16 @@ body{
     border-radius: 20px;
 }
 
-.northernImg1-1:hover, .northernImg1-2:hover, .northernImgs2 img:hover {
-    transform: scale(1.05);      
+.northernImg1-1:hover , .northernImg1-2:hover , .northernImgs2 img:hover , .centralImgs1 img:hover , .centralImgs2 img:hover ,
+.northeasternImg1-1:hover , .northeasternImg1-2:hover , .northeasternImg2-1:hover , .northeasternImg2-2:hover ,
+.southern1-1:hover , .southern2-1:hover , .southern2-2:hover {
+    transform: scale(1.05);
     transition: transform 0.3s ease;
     z-index: 10;
     box-shadow: 0px 15px 30px #0000001a;
 }
 
 /* central */
-.centralImg {
-    display: flex;
-    flex: 1;
-    flex-direction: column; 
-    gap: 15px;
-    width: 100%;
-    margin-bottom: auto;
-    aspect-ratio: 408 / 480;
-}
-
 .centralImgs1 {
     display: flex;
     flex-direction: column;
@@ -238,20 +249,13 @@ body{
     border-radius: 20px;
 }
 
-.centralImgs1 img:hover , .centralImgs2 img:hover {
-    transform: scale(1.05);      
-    transition: transform 0.3s ease;
-    z-index: 10;
-    box-shadow: 0px 15px 30px #0000001a;
-}
-
 .centralButton {
     font-weight: 600;
     font-size: 1rem;
     color: #D2B264;
     margin-top: auto;
     padding: 0.75rem 1.5rem;
-    
+
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -278,7 +282,196 @@ body{
 
 .centralButton:hover .icon-brown-arrow {
     color: white;
-} 
+}
+
+/* northeastern */
+.northeasternImgs1 {
+    display: flex;
+    gap: 15px;
+    flex: 329;
+    width: 100%;
+    min-height: 0;
+    /* flex-direction: row; */
+}
+
+.northeasternImg1-1 {
+    flex: 163;
+    width: 0;
+    height: 100%;
+    /* aspect-ratio: 230 / 329; */
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.northeasternImg1-2 {
+    width: 100%;
+    flex: 163;
+    width: 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.northeasternImgs2 {
+    display: flex;
+    gap: 15px;
+    /* flex: 150; */
+    flex: 136;
+    width: 100%;
+    min-height: 0;
+}
+
+.northeasternImg2-1 {
+    width: 0;
+    height: 100%;
+    flex: 136;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.northeasternImg2-2 {
+    width: 0;
+    flex: 257;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.northeasternButton {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #E3925D;
+    margin-top: auto;
+    padding: 0.75rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    align-self: flex-start;
+    border: none;
+    background-color: white;
+
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon-redBrown-arrow {
+    color: #E3925D;
+    font-weight: 1rem;
+}
+
+.northeasternButton:hover {
+    background-color: #E3925D;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 2px 10px #0000001a;
+}
+
+.northeasternButton:hover .icon-redBrown-arrow {
+    color: white;
+}
+
+/* southern */
+.southernContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 85px;
+}
+
+.southernContentHeading h1,
+h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.southernContentDetail,
+.southernContentHeading {
+    padding-bottom: 1rem;
+}
+
+.southernContentPlace {
+    display: flex;
+}
+
+.southernImg {
+    padding-bottom: 4rem;
+}
+
+.southern1-1 {
+    width: 100%;
+    aspect-ratio: 673 / 140;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.southerns2 {
+    display: flex;
+    aspect-ratio: 666 / 180;
+    gap: 15px;
+    width: 100%;
+    min-height: 0;
+}
+
+.southern2-1 {
+    width: 0;
+    height: 100%;
+    flex: 494;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.southern2-2 {
+    width: 0;
+    height: 100%;
+    flex: 157;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.southernButton {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #5DA9D6;
+    margin-top: auto;
+    padding: 0.75rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: auto;
+
+    align-self: flex-start;
+    border: none;
+    background-color: white;
+
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.icon-blue-arrow {
+    color: #5DA9D6;
+    font-weight: 1rem;
+}
+
+.southernButton:hover {
+    background-color: #5DA9D6;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 2px 10px #0000001a;
+}
+
+.southernButton:hover .icon-blue-arrow {
+    color: white;
+}
 
 
 /* ขนาดหน้าจอมือถือ */
