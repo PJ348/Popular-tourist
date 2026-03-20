@@ -10,6 +10,7 @@ body {
     line-height: auto;
 }
 
+/* navbar header */
 .header {
     font-weight: 700;
     padding: 1.25rem 8rem;
@@ -21,19 +22,20 @@ body {
 
 .logo {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: black;
     text-decoration: none;
 }
 
 .navbar a {
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: black;
     text-decoration: none;
     margin-left: 30px;
 }
 
+/* img banner */
 .banner {
     width: 100%;
     margin: auto;
@@ -60,13 +62,13 @@ body {
     object-fit: cover;
     scroll-snap-align: center;
     border-radius: 20px;
-
 }
 
 .bannerImages::-webkit-scrollbar {
     display: none;
 }
 
+/* all content */
 .main {
     margin-top: 50px;
     padding: 60px 12rem;
@@ -98,26 +100,20 @@ h2 {
     overflow: hidden;
 }
 
-.contentAllDetail,
-.contentAllPlace p {
+.contentAllDetail , .contentAllPlace p {
     font-size: 1rem;
     font-weight: 400;
 }
 
-.contentAllHeading,
 .contentAllDetail {
     padding-bottom: 1rem;
 }
 
 
-
-
-
-/* northern */
-.northernButton {
+/* all button */
+.northernButton , .centralButton , .northeasternButton , .southernButton {
     font-weight: 600;
     font-size: 1rem;
-    color: #73E993;
     margin-top: auto;
     padding: 0.75rem 1.5rem;
 
@@ -133,44 +129,76 @@ h2 {
     transition: all 0.3s;
 }
 
-.icon-green-arrow {
+.northernButton {
     color: #73E993;
-    font-size: 1rem;
+}
+.centralButton {
+    color: #D2B264;
+}
+.northeasternButton {
+    color: #E3925D;
+}
+.southernButton {
+    margin: auto;
+    color: #5DA9D6;
 }
 
-.northernButton:hover {
-    background-color: #73E993;
+.icon-green-arrow , .icon-brown-arrow , .icon-redBrown-arrow , .icon-blue-arrow {
+    font-size: 1rem;
+}
+.icon-green-arrow {
+    color: #73E993;
+}
+.icon-brown-arrow {
+    color: #D2B264;
+}
+.icon-redBrown-arrow {
+    color: #E3925D;
+}
+.icon-blue-arrow {
+    color: #5DA9D6;
+}
+
+.northernButton:hover , .centralButton:hover , .northeasternButton:hover , .southernButton:hover {
     border-radius: 5px;
     color: white;
     box-shadow: 0px 2px 10px #0000001a;
 }
 
-.northernButton:hover .icon-green-arrow {
+.northernButton:hover {
+    background-color: #73E993;
+}
+.centralButton:hover {
+    background-color: #D2B264;
+}
+.northeasternButton:hover {
+    background-color: #E3925D;
+}
+.southernButton:hover {
+    background-color: #5DA9D6;
+}
+
+.northernButton:hover .icon-green-arrow , .centralButton:hover .icon-brown-arrow ,
+.northeasternButton:hover .icon-redBrown-arrow , .southernButton:hover .icon-blue-arrow{
     color: white;
 }
 
-.northernImg,
-.centralImg,
-.northeasternImg,
-.southernImg {
+
+/* all img */
+.northernImg , .centralImg , .northeasternImg , .southernImg {
     display: flex;
     flex: 1;
     gap: 15px;
     width: 100%;
     margin-bottom: auto;
-    /* aspect-ratio: 408 / 480; */
 }
 
-.centralImg,
-.northeasternImg,
-.southernImg {
+.centralImg , .centralImgs1 , .northeasternImg , .southernImg {
     display: flex;
     flex-direction: column;
 }
 
-.northernImg,
-.centralImg,
-.northeasternImg {
+.northernImg , .centralImg , .northeasternImg {
     aspect-ratio: 408 / 480;
 }
 
@@ -181,18 +209,20 @@ h2 {
     gap: 15px;
 }
 
-.northernImg1-1 {
+/* img northern */
+.northernImg1-1 , .northernImg1-2 , .northernImgs2 img {
     width: 100%;
-    flex: 315;
     object-fit: cover;
     border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.northernImg1-1 {
+    flex: 315;
 }
 
 .northernImg1-2 {
-    width: 100%;
     flex: 150;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .northernImgs2 {
@@ -203,175 +233,99 @@ h2 {
 }
 
 .northernImgs2 img {
-    width: 100%;
     flex: 1;
     height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .northernImg1-1:hover , .northernImg1-2:hover , .northernImgs2 img:hover , .centralImgs1 img:hover , .centralImgs2 img:hover ,
 .northeasternImg1-1:hover , .northeasternImg1-2:hover , .northeasternImg2-1:hover , .northeasternImg2-2:hover ,
 .southern1-1:hover , .southern2-1:hover , .southern2-2:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
     z-index: 10;
     box-shadow: 0px 15px 30px #0000001a;
 }
 
-/* central */
+
+/* img central */
 .centralImgs1 {
-    display: flex;
-    flex-direction: column;
     gap: 15px;
 }
 
-.centralImgs1 img {
+.centralImgs1 img , .centralImgs2 img {
     width: 100%;
-    aspect-ratio: 408 / 150;
     object-fit: cover;
     border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.centralImgs1 img {
+    aspect-ratio: 408 / 150;
 }
 
 .centralImgs2 {
     display: flex;
-    flex: 150;
     flex-direction: row;
+    flex: 150;
     gap: 15px;
 }
 
 .centralImgs2 img {
-    width: 100%;
-    flex: 1;
     height: 100%;
     min-width: 0;
+    flex: 1;
+}
+
+
+/* northeastern */
+.northeasternImg1-2 , .northeasternImg2-1 , .northeasternImg2-2 {
+    width: 0;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.centralButton {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #D2B264;
-    margin-top: auto;
-    padding: 0.75rem 1.5rem;
-
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    align-self: flex-start;
-    border: none;
-    background-color: white;
-
-    cursor: pointer;
-    transition: all 0.3s;
+.northeasternImg1-1 , .northeasternImg1-2 , .northeasternImg2-1 , .northeasternImg2-2 {
+    transition: transform 0.3s ease;
 }
 
-.icon-brown-arrow {
-    color: #D2B264;
-    font-weight: 1rem;
-}
-
-.centralButton:hover {
-    background-color: #D2B264;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 0px 2px 10px #0000001a;
-}
-
-.centralButton:hover .icon-brown-arrow {
-    color: white;
-}
-
-/* northeastern */
 .northeasternImgs1 {
     display: flex;
     gap: 15px;
     flex: 329;
     width: 100%;
     min-height: 0;
-    /* flex-direction: row; */
 }
 
 .northeasternImg1-1 {
     flex: 163;
     width: 0;
     height: 100%;
-    /* aspect-ratio: 230 / 329; */
     height: 100%;
+
     object-fit: cover;
     border-radius: 20px;
 }
 
 .northeasternImg1-2 {
-    width: 100%;
     flex: 163;
-    width: 0;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .northeasternImgs2 {
     display: flex;
-    gap: 15px;
-    /* flex: 150; */
-    flex: 136;
     width: 100%;
+    flex: 136;
     min-height: 0;
+    gap: 15px;
 }
 
 .northeasternImg2-1 {
-    width: 0;
-    height: 100%;
     flex: 136;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .northeasternImg2-2 {
-    width: 0;
     flex: 257;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
-.northeasternButton {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #E3925D;
-    margin-top: auto;
-    padding: 0.75rem 1.5rem;
-
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    align-self: flex-start;
-    border: none;
-    background-color: white;
-
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.icon-redBrown-arrow {
-    color: #E3925D;
-    font-weight: 1rem;
-}
-
-.northeasternButton:hover {
-    background-color: #E3925D;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 0px 2px 10px #0000001a;
-}
-
-.northeasternButton:hover .icon-redBrown-arrow {
-    color: white;
-}
 
 /* southern */
 .southernContent {
@@ -381,8 +335,7 @@ h2 {
     padding-bottom: 85px;
 }
 
-.southernContentHeading h1,
-h2 {
+.southernContentHeading h1 , h2 {
     font-weight: 500;
     font-size: 2.5rem;
     display: -webkit-box;
@@ -393,8 +346,7 @@ h2 {
     align-items: center;
 }
 
-.southernContentDetail,
-.southernContentHeading {
+.southernContentDetail , .southernContentHeading {
     padding-bottom: 1rem;
 }
 
@@ -403,96 +355,38 @@ h2 {
 }
 
 .southernImg {
+    padding: 0 5rem;
     padding-bottom: 4rem;
+}
+
+.southern1-1 , .southern2-1 , .southern2-2 {
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.southern2-1 , .southern2-2 {
+    width: 0;
+    height: 100%;
 }
 
 .southern1-1 {
     width: 100%;
     aspect-ratio: 673 / 140;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .southerns2 {
     display: flex;
-    aspect-ratio: 666 / 180;
-    gap: 15px;
     width: 100%;
     min-height: 0;
+    aspect-ratio: 666 / 180;
+    gap: 15px;
 }
 
 .southern2-1 {
-    width: 0;
-    height: 100%;
     flex: 494;
-    object-fit: cover;
-    border-radius: 20px;
 }
 
 .southern2-2 {
-    width: 0;
-    height: 100%;
     flex: 157;
-    object-fit: cover;
-    border-radius: 20px;
 }
-
-.southernButton {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #5DA9D6;
-    margin-top: auto;
-    padding: 0.75rem 1.5rem;
-
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: auto;
-
-    align-self: flex-start;
-    border: none;
-    background-color: white;
-
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.icon-blue-arrow {
-    color: #5DA9D6;
-    font-weight: 1rem;
-}
-
-.southernButton:hover {
-    background-color: #5DA9D6;
-    border-radius: 5px;
-    color: white;
-    box-shadow: 0px 2px 10px #0000001a;
-}
-
-.southernButton:hover .icon-blue-arrow {
-    color: white;
-}
-
-
-/* ขนาดหน้าจอมือถือ */
-/* @media (max-width:848px){
-    .header {
-        padding: 1rem 4rem;
-        font-weight: bold;
-        display: flex;
-        justify-content: space-between;
-        box-shadow: 0px 2px 10px #0000001a;
-    }
-    .navbar {
-        display: none;
-    }
-
-   .logo {
-        font-size: 1rem;
-   }
-   
-   .navbar a {
-        font-size: 1rem;
-   }
-    
-} */
