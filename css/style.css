@@ -13,7 +13,7 @@ body {
 /* navbar header */
 .header {
     font-weight: 700;
-    padding: 1.25rem 8rem;
+    padding: 1.25rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@ body {
 
 .logo {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: black;
     text-decoration: none;
 }
@@ -39,8 +39,7 @@ body {
 .banner {
     width: 100%;
     margin: auto;
-    padding: 0 8rem;
-    padding-top: 60px;
+    padding: 40px 5rem 0 5rem;
 }
 
 .bannerImages {
@@ -70,8 +69,8 @@ body {
 
 /* all content */
 .main {
-    margin-top: 50px;
-    padding: 60px 12rem;
+    margin-top: 80px;
+    padding: 0 10.5rem;
 }
 
 .content {
@@ -79,10 +78,11 @@ body {
     min-height: 480px;
     display: flex;
     justify-content: space-between;
-    gap: 142px;
+    gap: 80px;
     margin: 0 auto;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     max-width: 1200px;
+    align-items: stretch;
 }
 
 .contentAll {
@@ -91,10 +91,9 @@ body {
     flex: 1;
 }
 
-.contentAllHeading h1,
-h2 {
+.contentAllHeading h1 , h2 {
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -105,7 +104,7 @@ h2 {
     font-weight: 400;
 }
 
-.contentAllDetail {
+.contentAllHeading , .contentAllDetail  {
     padding-bottom: 1rem;
 }
 
@@ -115,7 +114,7 @@ h2 {
     font-weight: 600;
     font-size: 1rem;
     margin-top: auto;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1rem 0.75rem 1.5rem;
 
     display: flex;
     align-items: center;
@@ -190,7 +189,7 @@ h2 {
     flex: 1;
     gap: 15px;
     width: 100%;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
 }
 
 .centralImg , .centralImgs1 , .northeasternImg , .southernImg {
@@ -198,10 +197,12 @@ h2 {
     flex-direction: column;
 }
 
-.northernImg , .centralImg , .northeasternImg {
+/* .northernImg , .centralImg , .northeasternImg {
     aspect-ratio: 408 / 480;
-}
+} */
 
+
+/* img northern */
 .northernImgs1 {
     display: flex;
     flex: 243;
@@ -209,7 +210,6 @@ h2 {
     gap: 15px;
 }
 
-/* img northern */
 .northernImg1-1 , .northernImg1-2 , .northernImgs2 img {
     width: 100%;
     object-fit: cover;
@@ -276,7 +276,7 @@ h2 {
 }
 
 
-/* northeastern */
+/* img northeastern */
 .northeasternImg1-2 , .northeasternImg2-1 , .northeasternImg2-2 {
     width: 0;
     height: 100%;
@@ -327,27 +327,27 @@ h2 {
 }
 
 
-/* southern */
+/* img southern */
 .southernContent {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 85px;
+    text-align: center;
+    padding-bottom: 55px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .southernContentHeading h1 , h2 {
     font-weight: 500;
-    font-size: 2.5rem;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    font-size: 2.25rem;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .southernContentDetail , .southernContentHeading {
     padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .southernContentPlace {
@@ -355,8 +355,8 @@ h2 {
 }
 
 .southernImg {
-    padding: 0 5rem;
-    padding-bottom: 4rem;
+    padding: 0 2rem 4rem 2rem;
+    padding-bottom: 2rem;
 }
 
 .southern1-1 , .southern2-1 , .southern2-2 {
@@ -390,3 +390,80 @@ h2 {
 .southern2-2 {
     flex: 157;
 }
+
+
+
+
+/* respon 900-1343 */
+@media (max-width: 1343px) {
+    /* .header {
+        padding: 1.25rem 6rem;
+    } */
+
+    .banner {
+        padding: 40px 4rem 0 4rem;
+    }
+
+    .bannerImages {
+        height: 250px; 
+    }
+
+    .bannerImage {
+        width: 100%;       
+        height: 100%; 
+        object-fit: cover;
+    }
+
+    .main {
+        margin-top: 80px;
+        padding: 0 8rem;
+    }
+
+    .content {
+        gap: 40px;
+        min-height: 328px;
+    }
+
+    .contentAllHeading h1 , .contentAllHeading h2 , .southernContentHeading h1, .southernContentHeading h2 {
+        font-size: 1.75rem;
+    }
+
+    .contentAllDetail , .contentAllPlace p ,  .southernContentDetail , .southernContentPlace p{
+        font-size: 0.9rem;
+    }
+
+    .northernImg , .centralImg , .northeasternImg {
+        aspect-ratio: 408 / 480;
+    }
+
+    .northernImgs1 {
+        flex: 143;
+    }
+
+    .northernImg1-1 {
+        flex: 215;
+    }
+
+    .northernImg1-2 {
+        flex: 100;
+    }
+
+    .northernImgs2 {
+        flex: 100;
+    }
+
+    .contentAllPlace {
+        padding-bottom: 1rem;
+    }
+
+    .northernButton , .centralButton , .northeasternButton , .southernButton  {
+        font-size: 0.9rem;
+        padding: 0.65rem 0.9rem 0.65rem 1.4rem;
+    }
+
+    .icon-green-arrow , .icon-brown-arrow , .icon-redBrown-arrow , .icon-blue-arrow {
+        font-size: 0.9rem;
+    }
+
+}
+
