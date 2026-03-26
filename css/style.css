@@ -7,17 +7,22 @@
 body {
     font-family: "Inter", "Open Sans", "Roboto";
     background-color: #ffffff;
-    line-height: auto;
+    line-height: 1.5;
 }
 
 /* navbar header */
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
     font-weight: 700;
     padding: 1.25rem 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 2px 10px #0000001a;
+    box-shadow: 0px 10px 10px #0000001a;
+    background-color: #ffffff;
 }
 
 .logo {
@@ -32,8 +37,53 @@ body {
     font-size: 1rem;
     color: black;
     text-decoration: none;
-    margin-left: 30px;
+    padding-left: 30px;
+    /* margin-left: 30px; */
 }
+
+.hambergerMenu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1 , .bar2 , .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+  border-radius: 2rem;
+}
+/* hamberger menu */
+/* .hambergerMenu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1 , .bar2 , .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 2rem;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.menu-acti {
+    display: block !important;
+} */
 
 /* img banner */
 .banner {
@@ -69,7 +119,7 @@ body {
 
 /* all content */
 .main {
-    margin-top: 80px;
+    margin: 80px 80px;
     padding: 0 10.5rem;
 }
 
@@ -91,7 +141,7 @@ body {
     flex: 1;
 }
 
-.contentAllHeading h1 , h2 {
+.contentAllHeading h1 , .contentAllHeading h2 {
     font-weight: 500;
     font-size: 2.25rem;
     display: -webkit-box;
@@ -189,6 +239,8 @@ body {
     flex: 1;
     gap: 15px;
     width: 100%;
+    /* overflow: hidden;
+    border-radius: 20px; */
     /* margin-bottom: auto; */
 }
 
@@ -333,8 +385,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 55px;
-    max-width: 1200px;
+    /* padding-bottom: 55px; */
+    /* max-width: 1200px; */
     margin: auto;
 }
 
@@ -352,11 +404,14 @@ body {
 
 .southernContentPlace {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
 }
 
 .southernImg {
-    padding: 0 2rem 4rem 2rem;
-    padding-bottom: 2rem;
+    padding: 0rem 5rem 4rem 5rem;
+    /* padding-bottom: 2rem; */
 }
 
 .southern1-1 , .southern2-1 , .southern2-2 {
@@ -410,7 +465,7 @@ body {
 
     .bannerImage {
         width: 100%;       
-        height: 100%; 
+        height: 250px; 
         object-fit: cover;
     }
 
@@ -465,5 +520,279 @@ body {
         font-size: 0.9rem;
     }
 
+}
+
+/* respon 1000 */
+@media (max-width: 1000px) {
+    .banner {
+        padding: 40px 1rem 0 1rem;
+    }
+
+    .bannerImages {
+        height: 200px;
+    }
+
+    .bannerImage {
+        width: 100%;
+        height: 200px;
+    }
+
+    .main {
+        margin-top: 50px;
+        padding: 0 2.5rem;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        margin-bottom: 80px;
+    }
+    
+    .contentAll {
+        display: contents;
+        text-align: center;
+    }
+    
+    .contentAllHeading h1 ,.contentAllHeading h2 {
+        order: 1;
+    }
+    
+    .contentAllDetail {
+        order: 2;
+    }
+    
+    .contentAllPlace {
+        order: 3;
+        display: flex;
+    }
+
+    .contentAllHeading h1 , .contentAllHeading h2 , .southernContentHeading h1, .southernContentHeading h2 {
+        font-size: 1.25rem;
+    }
+
+    .contentAllDetail , .contentAllPlace p ,  .southernContentDetail , .southernContentPlace p{
+        font-size: 0.8rem;
+        max-width: 650px;
+    }
+    
+    .southernContent {
+        padding-bottom: 1rem;
+    }
+
+    .northernImg , .centralImg , .northeasternImg {
+        order: 4;
+        width: 100%;
+        
+        max-width: 320px; 
+ 
+        padding: 0 !important;
+        aspect-ratio: 408 / 480; 
+        margin-top: 20px;
+        
+    }
+
+    .southernImg {
+        padding: 0 ;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .southernContentPlace {
+        padding-bottom: 1rem;
+    }
+
+    .northernButton , .centralButton , .northeasternButton , .southernButton {
+        order: 5;
+        margin-top: 2rem;
+        align-self: center;
+    }
+
+}
+
+
+/* repon 720px ทำเมนูข้างบน*/
+@media (max-width: 720px) {
+    .main {
+        padding: 0 0;
+    }
+
+    .header {
+        padding: 1rem 2rem;
+    }
+
+    .hambergerMenu {
+        display: block;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 7px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -7px) rotate(45deg);
+    }
+
+    .menu-acti {
+        display: block !important;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+       
+        max-height: 0; 
+        overflow: hidden; 
+        transition: max-height 0.4s ease-in-out;
+    }
+
+    .navbar a {
+        font-size: 0.8rem;
+        display: block;
+        width: 100%; 
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .navbar a:hover {
+        background-color: #ebebeb;
+    }
+
+    .navbar.active {
+        max-height: 250px;
+        
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 10px 10px #0000001a;
+    }
+}
+
+
+/* respon 640px */
+@media (max-width: 640px) {
+    .banner {
+        padding: 30px 0 0 0;
+    }
+    
+    .bannerImages {
+        height: 150px;
+    }
+
+    .bannerImage {
+        width: 100%;
+        height: 150px; 
+    }
+
+    .contentAllPlace , .southernContentPlace {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .southernContentPlace {
+        display: flex;
+        flex-direction: column;
+    } */
+
+}
+
+
+/* repon 560px */
+@media (max-width: 560px) {
+    .main {
+        margin: 40px 40px;
+    }
+
+    .content {
+        gap: 0;
+    }
+
+    .contentAllHeading h1 , .contentAllHeading h2 , .southernContentHeading h1, .southernContentHeading h2 {
+        font-size: 1rem;
+    }
+
+    .contentAllPlace , .southernContentPlace {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .northernImg , .centralImg , .northeasternImg {
+        max-width: 300px;
+    }
+
+    .southernImg {
+        padding: 0 ;
+    }
+
+    .northernImg, .centralImg, .northeasternImg, .southernImg,
+    .northernImgs1, .northernImgs2, 
+    .centralImgs1, .centralImgs2, 
+    .northeasternImgs1, .northeasternImgs2, 
+    .southerns2 {
+        gap: 10px !important; 
+    }
+
+    .northernButton , .centralButton , .northeasternButton , .southernButton {
+        font-size: 0.75rem;
+        padding: 0.5rem 0.75rem 0.5rem 1rem;
+    }
+
+    .icon-green-arrow , .icon-brown-arrow , .icon-redBrown-arrow , .icon-blue-arrow {
+        font-size: 0.75rem;
+    }
+
+}
+
+/* respon 500px */
+@media (max-width: 500px) {
+    /* .main {
+        margin: 40px 40px;
+    } */
+    .contentAllHeading , .contentAllDetail , .contentAllPlace ,
+    .southernContentHeading , .southernContentDetail {
+        text-align: start;
+        align-self: flex-start; 
+    }
+    
+    .southernContentPlace {
+        align-items: flex-start;
+    }
+    
+    .southernContent {
+        padding-bottom: 1rem;
+    }
+}
+
+/* respon 480px */
+@media (max-width: 480px) {
+    .contentAllDetail , .contentAllPlace p ,  .southernContentDetail , .southernContentPlace p{
+        font-size: 0.7rem;
+        max-width: 650px;
+    }
+    
+    .northernImg , .centralImg , .northeasternImg , .southernImg ,
+    .northernImgs1 , .northernImgs2 , .centralImgs1 , .centralImgs2 , 
+    .northeasternImgs1 , .northeasternImgs2 , .southernImg , .southerns2 {
+        gap: 8px !important;
+    }
+
+    .northernButton, .centralButton, .northeasternButton, .southernButton {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.6rem 0.4rem 0.8rem;
+        align-self: flex-start;
+        margin-left: 0.5rem;
+    }
+    .icon-green-arrow, .icon-brown-arrow, .icon-redBrown-arrow, .icon-blue-arrow {
+        font-size: 0.7rem;
+    }
 }
 
