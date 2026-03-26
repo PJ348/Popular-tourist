@@ -23,3 +23,10 @@ setInterval(() => {
         
     }
 }, 3000);
+
+function myFunction(x) {
+    x.classList.toggle("change");
+
+    let myNavbar = document.getElementById("myNavbar");
+    myNavbar.classList.toggle("active");
+}
