@@ -30,3 +30,7 @@ function myFunction(x) {
     let myNavbar = document.getElementById("myNavbar");
     myNavbar.classList.toggle("active");
 }
+
+const user = "pornthinrada.janphen";
+const domain = "gmail.com";
+document.getElementById("email").textContent = user + "@" + domain;
