@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta description for SEO -->
+  <meta name="description" content="A webpage about popular tourist destinations around the Thailand.">
+  <!-- favicon -->
+  <link rel="icon" type="image/png/jpg" href="favicon.png">
+  <!-- font link Inter, Open Sans, Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- css , js link -->
+  <link rel="stylesheet" href="../css/northern.css">
+  <script src="./northern.js" defer></script>
+  <script src="./sameDetail.js" defer></script>
+  <title>Popular Tourist</title>
+  
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a class="logo" href="#home" onclick="window.location.href='index.html';">Popular Tourist</a>
+    <div class="navbar" id="myNavbar">
+      <a href="northern.html" class="navbarNorthern">Northern</a>
+      <a href="central.html" class="navbarCentral">Central</a>
+      <a href="northeastern.html" class="navbarNortheastern">Northeastern</a>
+      <a href="southern.html" class="navbarSouthern">Southern</a>
+    </div>
+
+    <div class="hambergerMenu" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
+  </header>
+
+  <div class="banner">
+    <img src="../img/northern/northern.jpg" class="bannerImage">
+    <div class="bannerText">
+      <p class="bannerTextOne">NORTHERN</p>
+      <p class="bannerTextTwo">Embrace the cool breeze, misty mountains, and slow living</p>
+    </div>
+
+  </div>
+
+  <main class="main">
+    <p class="openText">"Grace of Doi Suthep, Pride of Traditions, Beauty of Blossoms, The Precious Nakhon Phing"</p>
+    <p class="provincialMotto">- Provincial Motto -</p>
+
+    <div class="selectProvince">
+      <button class="tabSelect active" id="chiangmai" onclick="activeSelectProvince(this)">
+        <p>Chiang Mai</p>
+      </button>
+
+      <button class="tabSelect" id="chiangrai" onclick="activeSelectProvince(this)">
+        <p>Chiang Rai</p>
+      </button>
+
+      <button class="tabSelect" id="Nan" onclick="activeSelectProvince(this)">
+        <p>Nan</p>
+      </button>
+    </div>
+
+    <div class="contentAll" id="contentChiangMai">
+      <div class="content">
+        <img src="../img/northern/watPhraThatDoiSuthep.jpg" alt="Wat Phra That Doi Suthep" class="img">
+        <div class="contentHeading">
+        
+          <div class="heading">
+            <p>Wat Phra That Doi Suthep</p>
+            <p>The sacred golden temple with panoramic city views</p>
+          </div>
+
+          <button onclick="direction('Wat Phra That Doi Suthep')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/thapaeGate.jpg" alt="Thapae Gate" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Thapae Gate</p>
+            <p>The historic red-brick wall and iconic city landmark</p>
+          </div>
+
+          <button onclick="direction('Thapae Gate')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/watChediLuang.jpg" alt="Wat Chedi Luang" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Wat Chedi Luang</p>
+            <p>The monumental ancient stupa in the heart of the old city</p>
+          </div>
+
+          <button onclick="direction('Wat Chedi Luang')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/doiInthanon.jpg" alt="Doi Inthanon National Park" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Doi Inthanon National Park</p>
+            <p>The highest peak of Siam, offering cool breezes and lush nature</p>
+          </div>
+
+          <button onclick="direction('Doi Inthanon National Park')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentAll active" id="contentChiangRai">
+      <div class="content">
+        <img src="../img/northern/whiteTemple.jpg" alt="Wat Rong Khun / White Temple" class="img">
+        <div class="contentHeading">
+
+          <div class="heading">
+            <p>Wat Rong Khun / White Temple</p>
+            <p>The stunning white temple adorned with intricate glass reflections</p>
+          </div>
+
+          <button onclick="direction('Wat Rong Khun / White Temple')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/blackHouse.jpg" alt="Baan Dam Museum / Black House" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Baan Dam Museum / Black House</p>
+            <p>A unique architectural collection representing the darker side of art</p>
+          </div>
+
+          <button onclick="direction('Baan Dam Museum / Black House')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/doiTung.jpg" alt="Doi Tung" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Doi Tung</p>
+            <p>The beautiful royal villa surrounded by vibrant blooming gardens</p>
+          </div>
+
+          <button onclick="direction('Doi Tung')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/singhaPark.jpg" alt="Singha Park Chiang Rai" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Singha Park Chiang Rai</p>
+            <p>A scenic agricultural park with tea plantations and exciting activities</p>
+          </div>
+
+          <button onclick="direction('Singha Park Chiang Rai')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/goldenTriangle.jpg" alt="Golden Triangle" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Golden Triangle</p>
+            <p>The historic meeting point of the borders of Thailand, Laos, and Myanmar</p>
+          </div>
+
+          <button onclick="direction('Golden Triangle')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentAll active" id="contentNan">
+      <div class="content">
+        <img src="../img/northern/doiSamerDao.jpg" alt="Doi Samer Dao" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Doi Samer Dao</p>
+            <p>The mountain that touches the stars, perfect for stargazing and the sea of mist</p>
+          </div>
+
+          <button onclick="direction('Doi Samer Dao')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/road3.jpeg" alt="Road No. 3" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Road No. 3</p>
+            <p>The famous scenic curve on the mountain ridge that perfectly resembles the number 3</p>
+          </div>
+
+          <button onclick="direction('Road No. 3')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/sapanVillage.jpg" alt="Sapan Village" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Sapan Village</p>
+            <p>A peaceful hidden village surrounded by misty mountains and rice terraces</p>
+          </div>
+
+          <button onclick="direction('Sapan Village')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/watPhumin.jpg" alt="Wat Phumin" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Wat Phumin</p>
+            <p>The iconic ancient temple home to the world-famous "Whispering Love" mural</p>
+          </div>
+
+          <button onclick="direction('Wat Phumin')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/nanWalkingStreet.jpg" alt="Nan Walking Street" class="img">
+        <div class="contentHeading">
+      
+          <div class="heading">
+            <p>Nan Walking Street</p>
+            <p>A vibrant evening market featuring local crafts and delicious street food, open on Friday to Sunday</p>
+          </div>
+
+          <button onclick="direction('Nan Walking Street')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    
+    <div class="footerContent">
+      <div class="footerContentDetail">
+        <h3>Popular Tourist</h3>
+        <p>Discover the wonders of Thailand, from the misty mountains of the North to the crystal-clear waters of the South. Your journey begins here</p>
+      </div>
+
+      <div class="footerContentDetail center-col">
+        <div class="links-wrapper">
+          <h3>Quick Links</h3>
+          <div class="footerContentDetailLink">
+            <a href="northern.html">Northern Thailand</a>
+            <a href="central.html">Central Thailand</a>
+            <a href="northeastern.html">Northeastern Thailand</a>
+            <a href="southern.html">Southern Thailand</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerContentDetail">
+        <h3>Contact & Connect</h3>
+        <div class="contact">
+          <p> <i class="fa-solid fa-envelope"></i> <span id="email"></span></p>
+          <p> <i class="fa-solid fa-location-dot"></i> Contact</p>
+        </div>
+
+        <div class="socailIcon">
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <p>© 2026 Popular Tourist</p>
+    </div>
+
+  </footer>
+
+</body>
+</html>
