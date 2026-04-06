@@ -3,6 +3,7 @@ const firstImageClone = banner.querySelectorAll('img')[0].cloneNode(true);
 banner.appendChild(firstImageClone);
 setInterval(() => {
     console.log(banner);
+    const slideWidth = banner.clientWidth;
     if (banner.scrollLeft + banner.clientWidth >= banner.scrollWidth - 10) {
         banner.scrollTo({
             left: 0,
@@ -10,14 +11,17 @@ setInterval(() => {
         });
         setTimeout(() => {
             banner.scrollBy({
-                left: banner.clientWidth,
+                left: slideWidth,
                 behavior: 'smooth'
             });
         }, 50); 
     } 
     else {
-        banner.scrollBy({
-            left: banner.clientWidth,
+        const currentScroll = banner.scrollLeft;
+        const nextIndex = Math.round(currentScroll / slideWidth) + 1;
+        
+        banner.scrollTo({
+            left: nextIndex * slideWidth,
             behavior: 'smooth'
         });
         
