@@ -17,8 +17,8 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- css , js link -->
-  <link rel="stylesheet" href="../css/northern.css">
-  <script src="./central.js" defer></script>
+  <link rel="stylesheet" href="../css/northern.css"> 
+  <script src="./southern.js" defer></script>
   <script src="./sameDetail.js" defer></script>
   <title>Popular Tourist</title>
 
@@ -43,118 +43,103 @@
   </header>
 
   <div class="banner">
-    <img src="../img/central/bangkok.jpg" class="bannerImage">
+    <img src="../img/southern/southern.jpg" class="bannerImage">
     <div class="bannerText">
-      <p class="bannerTextOne">CENTRAL</p>
+      <p class="bannerTextOne">SOUTHERN</p>
       <p class="bannerTextTwo">Dive into the vibrant street life, majestic temples, and the city that never sleeps</p>
     </div>
 
   </div>
 
   <main class="main">
-    <p class="openText">"Grace of Doi Suthep, Pride of Traditions, Beauty of Blossoms, The Precious Nakhon Phing"</p>
+    <p class="openText" id="openText"></p>
     <p class="provincialMotto">- Provincial Motto -</p>
 
     <div class="selectProvince">
-      <button class="tabSelect active" id="bangkok" onclick="activeSelectProvince(this)">
-        <p>Bangkok</p>
+      <button class="tabSelect active" id="phuket" onclick="activeSelectProvince(this)">
+        <p>Phuket</p>
       </button>
 
-      <button class="tabSelect" id="ayutthaya" onclick="activeSelectProvince(this)">
-        <p>Ayutthaya</p>
+      <button class="tabSelect" id="krabi" onclick="activeSelectProvince(this)">
+        <p>Krabi</p>
       </button>
 
-      <button class="tabSelect" id="kanchanaburi" onclick="activeSelectProvince(this)">
-        <p>Kanchanaburi</p>
+      <button class="tabSelect" id="suratThani" onclick="activeSelectProvince(this)">
+        <p>Surat Thani</p>
       </button>
     </div>
 
-    <div class="contentAll" id="contentBangkok">
+    <div class="contentAll" id="contentPhuket">
       <div class="content">
-        <img src="../img/central/watArun.jpg" alt="Wat Arun / The Temple of Dawn" class="img">
+        <img src="../img/southern/phuketOldTown.jpg" alt="Phuket Old Town" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Wat Arun / The Temple of Dawn</p>
-            <p>The iconic riverside temple known for its majestic porcelain-encrusted prang</p>
+            <p>Phuket Old Town</p>
+            <p>A charming historic district featuring colorful Sino-Portuguese architecture</p>
           </div>
 
-          <button onclick="direction('Wat Arun / The Temple of Dawn')">
+          <button onclick="direction('Phuket Old Town')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/yaowaratRoad.jpg" alt="Yaowarat Road / Bangkok Chinatown" class="img">
+        <img src="../img/southern/kohHae.jpg" alt="Koh Hae / Coral Island" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Yaowarat Road / Bangkok Chinatown</p>
-            <p>The legendary street food paradise and the vibrant heart of Chinatown</p>
+            <p>Koh Hae / Coral Island</p>
+            <p>A stunning tropical paradise perfect for snorkeling, thrilling water sports, and relaxing</p>
           </div>
 
-          <button onclick="direction('Yaowarat Road / Bangkok Chinatown')">
+          <button onclick="direction('Koh Hae / Coral Island')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/talingChan.jpg" alt="Taling Chan Floating Market" class="img">
+        <img src="../img/southern/maiKhaoBeach.jpg" alt="Mai Khao Beach" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Taling Chan Floating Market</p>
-            <p>An authentic riverside experience with local food and charming boat tours</p>
+            <p>Mai Khao Beach</p p>
+            <p>Phuket's longest and most peaceful beach, famous for breathtaking close-up plane spotting</p>
           </div>
 
-          <button onclick="direction('Taling Chan Floating Market')">
+          <button onclick="direction('Mai Khao Beach')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/chatuchakWeekendMarket.jpg" alt="Chatuchak Weekend Market" class="img">
+        <img src="../img/southern/twoHeroinesMonument.jpg" alt="The Two Heroines Monument" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Chatuchak Weekend Market</p>
-            <p>The world’s largest weekend market, offering an ultimate shopping adventure</p>
+            <p>The Two Heroines Monument</p>
+            <p>The iconic and sacred memorial honoring the brave sisters who heroically defended Phuket</p>
           </div>
 
-          <button onclick="direction('Chatuchak Weekend Market')">
+          <button onclick="direction('The Two Heroines Monument')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/bacc.jpg" alt="Bangkok Art and Culture Centre (BACC)" class="img">
+        <img src="../img/southern/phuketBigBuddha.jpeg" alt="Phuket Big Buddha (Nakkerd Hill)" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Bangkok Art and Culture Centre (BACC)</p>
-            <p>The creative heart of Bangkok's contemporary art and design scene</p>
+            <p>Phuket Big Buddha (Nakkerd Hill)</p>
+            <p>A majestic white marble Buddha offering stunning 360-degree island views</p>
           </div>
 
-          <button onclick="direction('Bangkok Art and Culture Centre (BACC)')">
-            <i class="fa-solid fa-location-arrow"></i>
-            <p>Direction</p>
-          </button>
-        </div>
-      </div>
-      <div class="content">
-        <img src="../img/central/grandPalace.jpg" alt="The Grand Palace" class="img">
-        <div class="contentHeading">
-          
-          <div class="heading">
-            <p>The Grand Palace</p>
-            <p>The spectacular architectural masterpiece and the historic royal residence of Siam</p>
-          </div>
-
-          <button onclick="direction('The Grand Palace')">
+          <button onclick="direction('Phuket Big Buddha (Nakkerd Hill)')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
@@ -162,62 +147,62 @@
       </div>
     </div>
 
-    <div class="contentAll active" id="contentAyutthaya">
+    <div class="contentAll active" id="contentKrabi">
       <div class="content">
-        <img src="../img/central/ayothayaFloating.jpg" alt="Ayothaya Floating Market" class="img">
+        <img src="../img/southern/piPi.jpg" alt="Phi Phi Islands & Maya Bay" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Ayothaya Floating Market</p>
-            <p>A retro floating market showcasing traditional Thai lifestyle and local delicacies</p>
+            <p>Phi Phi Islands & Maya Bay</p>
+            <p>The world-famous archipelago featuring crystal-clear waters and the stunning Maya Bay</p>
           </div>
 
-          <button onclick="direction('Ayothaya Floating Market')">
+          <button onclick="direction('Phi Phi Islands & Maya Bay')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/watYaiChaiMongkhon.jpg" alt="Wat Yai Chai Mongkhon" class="img">
+        <img src="../img/southern/thaleWaek.jpg" alt="Thale Waek (Separated Sea)" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Wat Yai Chai Mongkhon</p>
-            <p>The magnificent ancient temple featuring a towering victory stupa</p>
+            <p>Thale Waek (Separated Sea)</p>
+            <p>An unseen natural wonder where a stunning white sandbar emerges at low tide</p>
           </div>
 
-          <button onclick="direction('Wat Yai Chai Mongkhon')">
+          <button onclick="direction('Thale Waek (Separated Sea)')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/watPhraSiSanphet.jpg" alt="Wat Phra Si Sanphet" class="img">
+        <img src="../img//southern/tigerCaveTemple.jpg" alt="Tiger Cave Temple" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Wat Phra Si Sanphet</p>
-            <p>The iconic ruins of the holiest temple inside the ancient Royal Palace</p>
+            <p>Tiger Cave Temple</p>
+            <p>A sacred temple famous for its challenging 1,260-step climb to a panoramic summit</p>
           </div>
 
-          <button onclick="direction('Wat Phra Si Sanphet')">
+          <button onclick="direction('Tiger Cave Temple')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/ayutthayaElephantPalace.jpg" alt="Ayutthaya Elephant Palace & Royal Kraal" class="img">
+        <img src="../img/southern/krabiWalkingStreet.jpg" alt="Krabi Walking Street" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Ayutthaya Elephant Palace & Royal Kraal</p>
-            <p>A unique camp offering memorable elephant rides through the historic ruins</p>
+            <p>Krabi Walking Street</p>
+            <p>A lively weekend market packed with local street food</p>
           </div>
 
-          <button onclick="direction('Ayutthaya Elephant Palace & Royal Kraal')">
+          <button onclick="direction('Krabi Walking Street')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
@@ -225,62 +210,77 @@
       </div>
     </div>
 
-    <div class="contentAll active" id="contentKanchanaburi">
+    <div class="contentAll active" id="contentSuratThani">
       <div class="content">
-        <img src="../img/central/erawanWaterfall.jpg" alt="Erawan Waterfall" class="img">
+        <img src="../img/southern/kohSamui.jpg" alt="Koh Samui" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Erawan Waterfall</p>
-            <p>The stunning seven-tiered emerald waterfall hidden in the lush jungle</p>
+            <p>Koh Samui</p>
+            <p>A world-class tropical island famous for its palm-fringed beaches and luxury resorts</p>
           </div>
 
-          <button onclick="direction('Erawan Waterfall')">
+          <button onclick="direction('Koh Samui')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/theBridge.jpg" alt="The Bridge on the River Kwai" class="img">
+        <img src="../img/southern/kohTao.jpg" alt="Koh Tao" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>The Bridge on the River Kwai</p>
-            <p>The world-famous historic railway bridge and a symbol of World War II history</p>
+            <p>Koh Tao</p>
+            <p>A premier diving destination renowned for its crystal-clear waters and marine life</p>
           </div>
 
-          <button onclick="direction('Wat Tham Suea / Tiger Cave Temple')">
+          <button onclick="direction('Koh Tao')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/krasaeCave.jpg" alt="Krasae Cave & Death Railway" class="img">
+        <img src="../img/southern/kohPhangan.jpg" alt="Koh Phangan" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Krasae Cave & Death Railway</p>
-            <p>The historic wooden railway bridge clinging to a steep cliff beside the Kwai Noi River</p>
+            <p>Koh Phangan</p>
+            <p>A beautiful island celebrated for its world-famous Full Moon Party and serene beaches</p>
           </div>
 
-          <button onclick="direction('Krasae Cave & Death Railway')">
+          <button onclick="direction('Koh Phangan')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/kanchanaburiSkywalk.jpg" alt="Kanchanaburi Skywalk" class="img">
+        <img src="../img/southern/watPhraBorommathatChaiya.jpg" alt="Wat Phra Borommathat Chaiya" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Kanchanaburi Skywalk</p>
-            <p>A thrilling glass walkway offering stunning panoramic views of the merging rivers</p>
+            <p>Wat Phra Borommathat Chaiya</p>
+            <p>A historic temple known for its impressive architecture and cultural significance</p>
           </div>
 
-          <button onclick="direction('Kanchanaburi Skywalk')">
+          <button onclick="direction('Wat Phra Borommathat Chaiya')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/southern/khaoPhangSuspensionBridge.jpg" alt="Khao Phang Suspension Bridge" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Khao Phang Suspension Bridge</p>
+            <p>A breathtaking suspension bridge offering spectacular views of the surrounding landscape</p>
+          </div>
+
+          <button onclick="direction('Khao Phang Suspension Bridge')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
