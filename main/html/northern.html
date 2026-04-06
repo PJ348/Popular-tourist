@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Meta description for SEO -->
@@ -18,13 +17,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- css , js link -->
   <link rel="stylesheet" href="../css/northern.css">
-  <script src="./central.js" defer></script>
+  <script src="./northern.js" defer></script>
   <script src="./sameDetail.js" defer></script>
   <title>Popular Tourist</title>
-
+  
 </head>
 <body>
-<!-- Header -->
+  <!-- Header -->
   <header class="header">
     <a class="logo" href="#home" onclick="window.location.href='index.html';">Popular Tourist</a>
     <div class="navbar" id="myNavbar">
@@ -43,10 +42,10 @@
   </header>
 
   <div class="banner">
-    <img src="../img/central/bangkok.jpg" class="bannerImage">
+    <img src="../img/northern/northern.jpg" class="bannerImage">
     <div class="bannerText">
-      <p class="bannerTextOne">CENTRAL</p>
-      <p class="bannerTextTwo">Dive into the vibrant street life, majestic temples, and the city that never sleeps</p>
+      <p class="bannerTextOne">NORTHERN</p>
+      <p class="bannerTextTwo">Embrace the cool breeze, misty mountains, and slow living</p>
     </div>
 
   </div>
@@ -56,105 +55,75 @@
     <p class="provincialMotto">- Provincial Motto -</p>
 
     <div class="selectProvince">
-      <button class="tabSelect active" id="bangkok" onclick="activeSelectProvince(this)">
-        <p>Bangkok</p>
+      <button class="tabSelect active" id="chiangmai" onclick="activeSelectProvince(this)">
+        <p>Chiang Mai</p>
       </button>
 
-      <button class="tabSelect" id="ayutthaya" onclick="activeSelectProvince(this)">
-        <p>Ayutthaya</p>
+      <button class="tabSelect" id="chiangrai" onclick="activeSelectProvince(this)">
+        <p>Chiang Rai</p>
       </button>
 
-      <button class="tabSelect" id="kanchanaburi" onclick="activeSelectProvince(this)">
-        <p>Kanchanaburi</p>
+      <button class="tabSelect" id="Nan" onclick="activeSelectProvince(this)">
+        <p>Nan</p>
       </button>
     </div>
 
-    <div class="contentAll" id="contentBangkok">
+    <div class="contentAll" id="contentChiangMai">
       <div class="content">
-        <img src="../img/central/watArun.jpg" alt="Wat Arun / The Temple of Dawn" class="img">
+        <img src="../img/northern/watPhraThatDoiSuthep.jpg" alt="Wat Phra That Doi Suthep" class="img">
         <div class="contentHeading">
-          
+        
           <div class="heading">
-            <p>Wat Arun / The Temple of Dawn</p>
-            <p>The iconic riverside temple known for its majestic porcelain-encrusted prang</p>
+            <p>Wat Phra That Doi Suthep</p>
+            <p>The sacred golden temple with panoramic city views</p>
           </div>
 
-          <button onclick="direction('Wat Arun / The Temple of Dawn')">
+          <button onclick="direction('Wat Phra That Doi Suthep')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/yaowaratRoad.jpg" alt="Yaowarat Road / Bangkok Chinatown" class="img">
+        <img src="../img/northern/thapaeGate.jpg" alt="Thapae Gate" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Yaowarat Road / Bangkok Chinatown</p>
-            <p>The legendary street food paradise and the vibrant heart of Chinatown</p>
+            <p>Thapae Gate</p>
+            <p>The historic red-brick wall and iconic city landmark</p>
           </div>
 
-          <button onclick="direction('Yaowarat Road / Bangkok Chinatown')">
+          <button onclick="direction('Thapae Gate')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/talingChan.jpg" alt="Taling Chan Floating Market" class="img">
+        <img src="../img/northern/watChediLuang.jpg" alt="Wat Chedi Luang" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Taling Chan Floating Market</p>
-            <p>An authentic riverside experience with local food and charming boat tours</p>
+            <p>Wat Chedi Luang</p>
+            <p>The monumental ancient stupa in the heart of the old city</p>
           </div>
 
-          <button onclick="direction('Taling Chan Floating Market')">
+          <button onclick="direction('Wat Chedi Luang')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/chatuchakWeekendMarket.jpg" alt="Chatuchak Weekend Market" class="img">
+        <img src="../img/northern/doiInthanon.jpg" alt="Doi Inthanon National Park" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Chatuchak Weekend Market</p>
-            <p>The world’s largest weekend market, offering an ultimate shopping adventure</p>
+            <p>Doi Inthanon National Park</p>
+            <p>The highest peak of Siam, offering cool breezes and lush nature</p>
           </div>
 
-          <button onclick="direction('Chatuchak Weekend Market')">
-            <i class="fa-solid fa-location-arrow"></i>
-            <p>Direction</p>
-          </button>
-        </div>
-      </div>
-      <div class="content">
-        <img src="../img/central/bacc.jpg" alt="Bangkok Art and Culture Centre (BACC)" class="img">
-        <div class="contentHeading">
-          
-          <div class="heading">
-            <p>Bangkok Art and Culture Centre (BACC)</p>
-            <p>The creative heart of Bangkok's contemporary art and design scene</p>
-          </div>
-
-          <button onclick="direction('Bangkok Art and Culture Centre (BACC)')">
-            <i class="fa-solid fa-location-arrow"></i>
-            <p>Direction</p>
-          </button>
-        </div>
-      </div>
-      <div class="content">
-        <img src="../img/central/grandPalace.jpg" alt="The Grand Palace" class="img">
-        <div class="contentHeading">
-          
-          <div class="heading">
-            <p>The Grand Palace</p>
-            <p>The spectacular architectural masterpiece and the historic royal residence of Siam</p>
-          </div>
-
-          <button onclick="direction('The Grand Palace')">
+          <button onclick="direction('Doi Inthanon National Park')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
@@ -162,62 +131,77 @@
       </div>
     </div>
 
-    <div class="contentAll active" id="contentAyutthaya">
+    <div class="contentAll active" id="contentChiangRai">
       <div class="content">
-        <img src="../img/central/ayothayaFloating.jpg" alt="Ayothaya Floating Market" class="img">
+        <img src="../img/northern/whiteTemple.jpg" alt="Wat Rong Khun / White Temple" class="img">
         <div class="contentHeading">
-          
+
           <div class="heading">
-            <p>Ayothaya Floating Market</p>
-            <p>A retro floating market showcasing traditional Thai lifestyle and local delicacies</p>
+            <p>Wat Rong Khun / White Temple</p>
+            <p>The stunning white temple adorned with intricate glass reflections</p>
           </div>
 
-          <button onclick="direction('Ayothaya Floating Market')">
+          <button onclick="direction('Wat Rong Khun / White Temple')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/watYaiChaiMongkhon.jpg" alt="Wat Yai Chai Mongkhon" class="img">
+        <img src="../img/northern/blackHouse.jpg" alt="Baan Dam Museum / Black House" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Wat Yai Chai Mongkhon</p>
-            <p>The magnificent ancient temple featuring a towering victory stupa</p>
+            <p>Baan Dam Museum / Black House</p>
+            <p>A unique architectural collection representing the darker side of art</p>
           </div>
 
-          <button onclick="direction('Wat Yai Chai Mongkhon')">
+          <button onclick="direction('Baan Dam Museum / Black House')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/watPhraSiSanphet.jpg" alt="Wat Phra Si Sanphet" class="img">
+        <img src="../img/northern/doiTung.jpg" alt="Doi Tung" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Wat Phra Si Sanphet</p>
-            <p>The iconic ruins of the holiest temple inside the ancient Royal Palace</p>
+            <p>Doi Tung</p>
+            <p>The beautiful royal villa surrounded by vibrant blooming gardens</p>
           </div>
 
-          <button onclick="direction('Wat Phra Si Sanphet')">
+          <button onclick="direction('Doi Tung')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/ayutthayaElephantPalace.jpg" alt="Ayutthaya Elephant Palace & Royal Kraal" class="img">
+        <img src="../img/northern/singhaPark.jpg" alt="Singha Park Chiang Rai" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Ayutthaya Elephant Palace & Royal Kraal</p>
-            <p>A unique camp offering memorable elephant rides through the historic ruins</p>
+            <p>Singha Park Chiang Rai</p>
+            <p>A scenic agricultural park with tea plantations and exciting activities</p>
           </div>
 
-          <button onclick="direction('Ayutthaya Elephant Palace & Royal Kraal')">
+          <button onclick="direction('Singha Park Chiang Rai')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/goldenTriangle.jpg" alt="Golden Triangle" class="img">
+        <div class="contentHeading">
+          
+          <div class="heading">
+            <p>Golden Triangle</p>
+            <p>The historic meeting point of the borders of Thailand, Laos, and Myanmar</p>
+          </div>
+
+          <button onclick="direction('Golden Triangle')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
@@ -225,62 +209,77 @@
       </div>
     </div>
 
-    <div class="contentAll active" id="contentKanchanaburi">
+    <div class="contentAll active" id="contentNan">
       <div class="content">
-        <img src="../img/central/erawanWaterfall.jpg" alt="Erawan Waterfall" class="img">
+        <img src="../img/northern/doiSamerDao.jpg" alt="Doi Samer Dao" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Erawan Waterfall</p>
-            <p>The stunning seven-tiered emerald waterfall hidden in the lush jungle</p>
+            <p>Doi Samer Dao</p>
+            <p>The mountain that touches the stars, perfect for stargazing and the sea of mist</p>
           </div>
 
-          <button onclick="direction('Erawan Waterfall')">
+          <button onclick="direction('Doi Samer Dao')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/theBridge.jpg" alt="The Bridge on the River Kwai" class="img">
+        <img src="../img/northern/road3.jpeg" alt="Road No. 3" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>The Bridge on the River Kwai</p>
-            <p>The world-famous historic railway bridge and a symbol of World War II history</p>
+            <p>Road No. 3</p>
+            <p>The famous scenic curve on the mountain ridge that perfectly resembles the number 3</p>
           </div>
 
-          <button onclick="direction('Wat Tham Suea / Tiger Cave Temple')">
+          <button onclick="direction('Road No. 3')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/krasaeCave.jpg" alt="Krasae Cave & Death Railway" class="img">
+        <img src="../img/northern/sapanVillage.jpg" alt="Sapan Village" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Krasae Cave & Death Railway</p>
-            <p>The historic wooden railway bridge clinging to a steep cliff beside the Kwai Noi River</p>
+            <p>Sapan Village</p>
+            <p>A peaceful hidden village surrounded by misty mountains and rice terraces</p>
           </div>
 
-          <button onclick="direction('Krasae Cave & Death Railway')">
+          <button onclick="direction('Sapan Village')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
         </div>
       </div>
       <div class="content">
-        <img src="../img/central/kanchanaburiSkywalk.jpg" alt="Kanchanaburi Skywalk" class="img">
+        <img src="../img/northern/watPhumin.jpg" alt="Wat Phumin" class="img">
         <div class="contentHeading">
           
           <div class="heading">
-            <p>Kanchanaburi Skywalk</p>
-            <p>A thrilling glass walkway offering stunning panoramic views of the merging rivers</p>
+            <p>Wat Phumin</p>
+            <p>The iconic ancient temple home to the world-famous "Whispering Love" mural</p>
           </div>
 
-          <button onclick="direction('Kanchanaburi Skywalk')">
+          <button onclick="direction('Wat Phumin')">
+            <i class="fa-solid fa-location-arrow"></i>
+            <p>Direction</p>
+          </button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="../img/northern/nanWalkingStreet.jpg" alt="Nan Walking Street" class="img">
+        <div class="contentHeading">
+      
+          <div class="heading">
+            <p>Nan Walking Street</p>
+            <p>A vibrant evening market featuring local crafts and delicious street food, open on Friday to Sunday</p>
+          </div>
+
+          <button onclick="direction('Nan Walking Street')">
             <i class="fa-solid fa-location-arrow"></i>
             <p>Direction</p>
           </button>
@@ -303,7 +302,7 @@
         <div class="links-wrapper">
           <h3>Quick Links</h3>
           <div class="footerContentDetailLink">
-            <a href="CENTRAL.html">CENTRAL Thailand</a>
+            <a href="northern.html">Northern Thailand</a>
             <a href="central.html">Central Thailand</a>
             <a href="northeastern.html">Northeastern Thailand</a>
             <a href="southern.html">Southern Thailand</a>
@@ -319,10 +318,10 @@
         </div>
 
         <div class="socailIcon">
-          <a href="#"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" id="github-link"><i class="fa-brands fa-github"></i></a>
+          <a href="#" id="linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" id="facebook-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" id="instagram-link"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -332,5 +331,6 @@
     </div>
 
   </footer>
+
 </body>
 </html>
