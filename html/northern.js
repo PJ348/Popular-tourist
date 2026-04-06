@@ -38,3 +38,11 @@ function activeSelectProvince(tabSelectActive) {
     }
 
 } 
+window.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll(".tabSelect");
+    tabs.forEach(tab => {
+        if (tab.textContent.trim() === "Chiang Mai") {
+            activeSelectProvince(tab); 
+        }
+    });
+});
