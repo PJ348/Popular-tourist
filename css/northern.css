@@ -139,6 +139,7 @@ body {
 .bannerTextOne {
     font-size: 4rem;
     font-weight: 600;
+    overflow-wrap: break-word;
 }
 
 .main {
@@ -159,15 +160,16 @@ body {
 
 .provincialMotto {
     margin-top: 0.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .selectProvince {
-    /* background-color: #73E993; */
     display: flex;
-    justify-content: center;
+    justify-content: safe center;
     align-items: center;
     margin-top: 2rem;
+    padding: 0 1rem;
+    overflow-x: auto;
 }
 
 .selectProvince button {
@@ -178,6 +180,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .tabSelect {
@@ -351,9 +354,9 @@ body {
 }
 
 /* respon 900-1343 */
-@media (max-width: 1343px) {
+/* @media (max-width: 1343px) {
 
-}
+} */
 
 
 @media (max-width: 1200px) {
@@ -385,6 +388,14 @@ body {
     }
     .center-col {
         align-items: flex-start;
+    }
+
+    .bannerTextOne {
+        font-size: 3.5rem;
+    }
+
+    .bannerTextTwo , .bannerTextOne {
+        margin: 0 2rem;
     }
     
 }
@@ -465,6 +476,10 @@ body {
     }
     .openText {
         font-size: 0.95rem;
+    }
+
+    .openText , .provincialMotto {
+        font-size: 0.9rem;
     }
 }
 
